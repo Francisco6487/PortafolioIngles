@@ -1,272 +1,203 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="estilo.css">
-    
-    
-  
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Francisco Dalla Rizza – Portfolio</title>
+  <link rel="stylesheet" href="estilo.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
 </head>
 <body>
 
-    
-    <!-- MENU ENCABEZADO -->
-    <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#">Francisco</a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
-                </ul>
-            </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
+  <!-- Language Switcher -->
+  <a href="../index.html" class="lang-switch">Español</a>
+
+  <!-- Fixed header container (was missing before) -->
+  <div class="contenedor-header">
+  <header>
+    <div class="logo">
+      <a href="#">Francisco</a>
     </div>
+    <nav id="nav">
+      <ul>
+        <li><a href="#inicio" onclick="seleccionar()">HOME</a></li>
+        <li><a href="#sobremi" onclick="seleccionar()">ABOUT ME</a></li>
+        <li><a href="#curriculum" onclick="seleccionar()">RESUME</a></li>
+        <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+        <li><a href="#contacto" onclick="seleccionar()">CONTACT</a></li>
+      </ul>
+    </nav>
+    <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </header>
+</div>
 
-    <!-- SECCION INICIO -->
-    <section id="funciona" class="funciona">
-    <section id="inicio" class="inicio">
-        <div class="contenido-banner">
-            <div class="contenedor-img">
-                <img src="img/Screenshot_1.png" alt="">
-            </div>
-            <h1>Francisco Dalla Rizza</h1>
-            <h2>Desarrollador Full stack</h2>
-            <div class="redes">
-                
-                
-              
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-              
-            </div>
-        </div>
-    </section>
-    </section>
 
-    <!-- SECCION SOBRE MI -->
-    <section id="sobremi" class="sobremi">
-        <div class="contenido-seccion">
-            <h2>Sobre Mí</h2>
-            <p><span>Hola, soy Francisco Dalla Rizza.</span> Soy una persona que encuentra satisfacción en mejorar cómo funcionan las cosas. Desde mis primeros pasos en administración, descubrí que detrás de cada problema operativo hay una solución más simple esperando ser implementada. Por eso me formé también en sistemas y actualmente me especializo en Analytics: quiero unir el mundo de los procesos con el poder de los datos.
-
-Me definen la responsabilidad, el pensamiento lógico y la calma para resolver. Pero sobre todo, disfruto ver cómo un pequeño cambio en un flujo de trabajo mejora el día de todo un equipo. Me entusiasma aprender, automatizar, ayudar y construir relaciones basadas en confianza y claridad.
-
-Hoy busco aplicar todo eso en proyectos donde se valore el orden, la eficiencia y la mejora continua. Porque no se trata solo de trabajar: se trata de aportar valor real, desde adentro.</p>
-
-            <div class="fila" >
-                <!-- datos personales -->
-                <div class="col">
-                    <h3>Datos Personales</h3>
-                    <ul>
-                        <li>
-                            <strong>Cumpleaños</strong>
-                            10-11-1994
-                        </li>
-                        <li>
-                            <strong>Teléfono</strong>
-                            +59494955466
-                        </li>
-                        <li>
-                            <strong>Email</strong>
-                            francisco.dallarizza@gmail.com
-                        </li>
-                        
-                        <li>
-                            <strong>Dirección</strong>
-                            Montevideo Uruguay
-                        </li>
-                        
-                    </ul>
-                </div>
-
-                <!-- intereses 
-                <div class="col">
-                    <h3>Intereses</h3>
-                    <div class="contenedor-intereses">
-                        <div class="interes">
-                            <i class="fa-solid fa-gamepad"></i>
-                            <span>JUEGOS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-headphones"></i>
-                            <span>MUSICA</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-plane"></i>
-                            <span>VIAJAR</span>
-                        </div>
-                        
-                        <div class="interes">
-                            <i class="fa-solid fa-person-hiking"></i>
-                            <span>DEPORTE</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-book"></i>
-                            <span>LIBROS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-car"></i>
-                            <span>AUTOS</span>
-                        </div>
-                        
-                        
-                    </div>
-                </div>
-            </div>
-            -->
-            
-        
-        
-        </div>
-    </section>
-   
-
-    <!-- SECCION CURRICULUM -->
-    <section id="curriculum" class="curriculum">
-        <div class="contenido-seccion">
-            <h2>Curriculum</h2>
-            <div class="fila">
-                <div class="col izquierda">
-                    <h3>Educación</h3>
-                    <div class="item izq">
-                        <h4> Licenciatura en Administracion de Empresas</h4>
-                        <span class="casa">O.R.T.</span>
-                        <span class="fecha">2024- Actualidad</span>
-                        <p></p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="item izq">
-                        <h4>Analista en Sistemas</h4>
-                        <span class="casa">Bios</span>
-                        <span class="fecha">2020-2023</span>
-                        <p></p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Desarrollador Web Fullstack</h4>
-                        <span class="casa">Union Informatica</span>
-                        <span class="fecha">2022 -Actualidad</span>
-                        <p></p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Administracion de Empresas</h4>
-                        <span class="casa">U.T.U.</span>
-                        <span class="fecha">2013 - 2016</span>
-                        <p></p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                </div>
-
-               
-        </div>
-    </section>
-
-    <!-- SECCION PORTFOLIO -->
-<section id="portfolio" class="portfolio">
-  <div class="contenido-seccion">
-    <h2>PORTFOLIO</h2>
-    <div class="galeria">
-
-      <!-- Proyecto Figma -->
-      <div class="proyecto">
-        <a href="https://www.figma.com/design/aoxg9o8fxfevtX3A27FC0z/La-Papelaria?m=auto&t=cJXr1aVr7W2hmYoi-6" target="_blank" rel="noopener noreferrer">
-          <img src="img/figma_logo_animation.gif" alt="Proyecto Figma - La Papelaria" />
-          <div class="overlay">
-            <h3>Diseños con</h3>
-            <p>Figma</p>
-          </div>
-        </a>
+  <!-- HOME -->
+  <section id="inicio" class="inicio">
+    <div class="contenido-banner">
+      <div class="contenedor-img">
+        <img src="img/Screenshot_1.png" alt="Profile photo" />
       </div>
-
-   <div class="proyecto">
-  <a href="../PowerBi proyecto/Untitled-1.html" target="_blank" rel="noopener noreferrer">
-    <img src="img/power-bi-microsoft-logo-png_seeklogo-400711.png" alt="Logo Power BI" />
-    <div class="overlay">
-      <h3>Dashboard</h3>
-      <p>Visualización</p>
+      <h1>Francisco Dalla Rizza</h1>
+      <h2>Full Stack Developer</h2>
+      <div class="redes">
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
     </div>
-  </a>
-</div>   
+  </section>
 
-      <!-- Proyectos creativos -->
-      <div class="proyecto">
-  <a href="https://gnsmas.wistia.com/medias/ibd03a9ru2" target="_blank" rel="noopener noreferrer">
-    <img src="../Portafolio-main/img/curso-capcut.jpg" alt="Foto creativa 1" />
-    <div class="overlay">
-      <h3>Tutoriales con IA</h3>
-      <p>Generación de facturas</p>
+  <!-- ABOUT ME -->
+  <section id="sobremi" class="sobremi">
+    <div class="contenido-seccion">
+      <h2>About Me</h2>
+      <p><span>Hello, I'm Francisco Dalla Rizza.</span> I'm someone who finds satisfaction in improving how things work. Since my early days in business administration, I discovered that behind every operational problem, there's a simpler solution waiting to be implemented. That's why I also studied systems and now specialize in Analytics—I want to bridge the gap between processes and the power of data.
+
+Responsibility, logical thinking, and calm problem-solving define me. But above all, I enjoy seeing how a small change in a workflow can improve an entire team's day. I'm passionate about learning, automating, helping, and building relationships based on trust and clarity.
+
+Today, I'm looking to apply all of that in projects that value order, efficiency, and continuous improvement—because it's not just about working, it's about delivering real value from within.</p>
+
+      <div class="fila">
+        <div class="col">
+          <h3>Personal Details</h3>
+          <ul>
+            <li><strong>Birthday:</strong> 1994-11-10</li>
+            <li><strong>Phone:</strong> +59894955466</li>
+            <li><strong>Email:</strong> francisco.dallarizza@gmail.com</li>
+            <li><strong>Location:</strong> Montevideo, Uruguay</li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </a>
-</div>
+  </section>
 
-     <div class="proyecto">
-  <a href="https://github.com/Francisco6487" target="_blank" rel="noopener noreferrer">
-    <img src="../Portafolio-main/img/github.png" alt="Foto creativa 1" />
-    <div class="overlay">
-      <h3>Otros Proyectos</h3>
-      
+  <!-- RESUME -->
+  <section id="curriculum" class="curriculum">
+    <div class="contenido-seccion">
+      <h2>Resume</h2>
+      <div class="fila">
+        <div class="col izquierda">
+          <h3>Education</h3>
+
+          <div class="item izq">
+            <h4>Bachelor in Business Administration</h4>
+            <span class="casa">ORT University</span>
+            <span class="fecha">2024 – Present</span>
+            <div class="conectori"><div class="circuloi"></div></div>
+          </div>
+
+          <div class="item izq">
+            <h4>Systems Analyst</h4>
+            <span class="casa">Bios Institute</span>
+            <span class="fecha">2020 – 2023</span>
+            <div class="conectori"><div class="circuloi"></div></div>
+          </div>
+
+          <div class="item izq">
+            <h4>Full Stack Web Developer</h4>
+            <span class="casa">Unión Informática</span>
+            <span class="fecha">2022 – 2024</span>
+            <div class="conectori"><div class="circuloi"></div></div>
+          </div>
+
+          <div class="item izq">
+            <h4>Business Administration Technician</h4>
+            <span class="casa">U.T.U.</span>
+            <span class="fecha">2013 – 2016</span>
+            <div class="conectori"><div class="circuloi"></div></div>
+          </div>
+
+        </div>
+      </div>
     </div>
-  </a>
-</div>
+  </section>
 
-      
-    </div>
-  </div>
-</section>
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="portfolio">
+    <div class="contenido-seccion">
+      <h2>Portfolio</h2>
+      <div class="galeria">
 
-    
-     <!-- Botón flotante de WhatsApp -->
-     <a href="https://wa.me/+59894955466?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios" class="whatsapp-button" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
-
-    <!-- 
-    <a href="https://wa.me/+59894955466" class="whatsapp-button">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>-->
-    
-
-    
-    <!-- footer -->
-    <footer class="footer">
-        <div class="footer-section social">
-            <h2>Redes Sociales</h2>
-            <div class="social-links">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <div class="proyecto">
+          <a href="https://www.figma.com/design/aoxg9o8fxfevtX3A27FC0z/La-Papelaria?m=auto" target="_blank">
+            <img src="img/figma_logo_animation.gif" alt="Figma Project – La Papelaria" />
+            <div class="overlay">
+              <h3>Designs using</h3>
+              <p>Figma</p>
             </div>
+          </a>
         </div>
-        <div class="footer-bottom">
-            &copy; Francisco Dalla Rizza. Todos los derechos reservados.
-        </div>
-    </footer>
 
-    <script src="script.js"></script>
-</body>
-</html>
+        <div class="proyecto">
+          <a href="https://francisco6487.github.io/Dashboar/" target="_blank">
+            <img src="img/power-bi-microsoft-logo-png_seeklogo-400711.png" alt="Power BI Logo" />
+            <div class="overlay">
+              <h3>Dashboard</h3>
+              <p>Visualization</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="proyecto">
+          <a href="https://gnsmas.wistia.com/medias/ibd03a9ru2" target="_blank">
+            <img src="img/curso-capcut.jpg" alt="AI Tutorial" />
+            <div class="overlay">
+              <h3>AI Tutorials</h3>
+              <p>Invoice generation</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="proyecto">
+          <a href="https://github.com/Francisco6487" target="_blank">
+            <img src="img/github.png" alt="GitHub Projects" />
+            <div class="overlay">
+              <h3>Other Projects</h3>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/+59894955466?text=Hi%2C%20I%20visited%20your%20portfolio%20and%20found%20it%20interesting%21%20Let's%20connect." class="whatsapp-button" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-section social">
+      <h2>Social Media</h2>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/francisco-dalla-rizza-06489729b/"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; Francisco Dalla Rizza. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../script.js"></script>
+
+  <style>
+    .lang-switch {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #222;
+      color: #fff;
+      padding: 8px 14px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 14px;
+      opacity: 0.7;
+      transition: all 0.3s;
+      z-index: 1000;
+    }
+
+    .lang-switch:hover {
+     
