@@ -642,17 +642,21 @@ footer .arriba {
   z-index: 1000;
 }
 
-.lang-switch:hover {
-  opacity: 1;
-  background-color: #444;
+/* Botón de idioma dentro del menú */
+nav ul li.idioma a {
+  padding: 8px 14px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+  transition: background 0.3s;
 }
 
-/* Responsive: Reduce tamaño en móviles */
-@media (max-width: 600px) {
-  .lang-switch {
-    padding: 8px 10px;
-    font-size: 12px;
-    top: 10px;
-    right: 10px;
-  }
+nav ul li.idioma a:hover {
+  background: rgba(255, 255, 255, 0.15);
 }
+
+/* Ícono opcional */
+nav ul li.idioma i {
+  margin-right: 6px;
+}
+
