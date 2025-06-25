@@ -625,3 +625,34 @@ footer .arriba {
   color: white;
   pointer-events: none; /* Mejora el clic en el ícono */
 }
+
+.lang-switch {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background-color: #222;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.lang-switch:hover {
+  opacity: 1;
+  background-color: #444;
+}
+
+/* Responsive: Reduce tamaño en móviles */
+@media (max-width: 600px) {
+  .lang-switch {
+    padding: 8px 10px;
+    font-size: 12px;
+    top: 10px;
+    right: 10px;
+  }
+}
